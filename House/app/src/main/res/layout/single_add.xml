@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SingleAddActivity">
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:id="@+id/txv_foodname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="50dp"
+        android:gravity="center"
+        android:id="@+id/txv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="輸入數量..."
+        android:id="@+id/edt_qty"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_abc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="確定" />
+
+        <Button
+            android:id="@+id/btn_cde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

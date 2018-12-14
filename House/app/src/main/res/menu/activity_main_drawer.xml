@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_order"
+            android:icon="@drawable/choices"
+            android:title="查看訂單" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/menu"
+            android:title="歷史紀錄" />
+
+        <item
+            android:id="@+id/nav_random"
+            android:icon="@drawable/dices"
+            android:title="隨機挑選" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/friendship"
+            android:title="眾樂樂" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/profile"
+                android:title="個人資料"
+                />
+            <item
+                android:id="@+id/nav_like"
+                android:icon="@drawable/love"
+                android:title="我的最愛" />
+
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/logout"
+                android:title="登出" />
+        </menu>
+    </item>
+
+</menu>

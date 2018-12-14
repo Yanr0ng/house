@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Score">
+
+    <TextView
+        android:id="@+id/txv_st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="店家名稱"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/txv_cu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="評價人"
+        android:textSize="30dp" />
+
+    <TextView
+        android:textSize="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  評價內容:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:text="  分數:" />
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:rating="1"
+            android:stepSize="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5" />
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:hint="..."
+        android:id="@+id/edt_report"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_sc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="評價" />
+
+        <Button
+            android:id="@+id/btn_ca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消" />
+
+    </LinearLayout>
+
+</LinearLayout>
